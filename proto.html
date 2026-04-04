@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>proto — квантовая суперпозиция смысла</title>
-<meta name="description" content="proto — операционная система квантовой суперпозиции смысла, прото-качества, ткань небытия. Время равновесия.">
-<meta name="keywords" content="proto, квантовый смысл, суперпозиция, протоуровень, время равновесия">
-<meta name="author" content="Garrik77">
+<title>proto — квантовая суперпозиция смысла. Время равновесия.</title>
+<meta name="description" content="proto — операционная система для работы с неопределённостью, суперпозицией и равновесием. Практические техники, команды, примеры диалогов.">
+<meta name="keywords" content="proto, квантовый смысл, суперпозиция, равновесие, прото-качества">
+<meta name="author" content="Garrik77 — архитектор диалоговых интерфейсов">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/animate.css">
@@ -21,6 +21,10 @@
   @media (max-width: 768px) { body { padding-top: 50px; } }
   .navbar-custom .navbar-toggle { border-color: #ddd; }
   .navbar-custom .navbar-toggle .icon-bar { background-color: #888; }
+  .command-list { list-style: none; padding-left: 0; }
+  .command-list li { margin-bottom: 10px; font-family: monospace; }
+  .faq-question { font-weight: bold; margin-top: 15px; }
+  .example-dialog { background: #f5f5f5; padding: 15px; border-left: 4px solid #888; margin: 20px 0; font-style: italic; }
 </style>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="70">
@@ -39,7 +43,7 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-menu">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html#home">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ОС <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -49,10 +53,12 @@
             <li><a href="resonance.html">resonance</a></li>
             <li><a href="light.html">light</a></li>
             <li><a href="prm.html">prm</a></li>
+            <li><a href="critic.html">critic (в разработке)</a></li>
+            <li><a href="time.html">time (анонс)</a></li>
           </ul>
         </li>
         <li><a href="index.html#about">О проекте</a></li>
-        <li><a href="index.html#contact">Контакты</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#modalUserSettings">Как начать?</a></li>
         <li><a href="https://github.com/Garrik77/quantum-sense" target="_blank">GitHub</a></li>
       </ul>
     </div>
@@ -70,6 +76,7 @@
         <div class="home-wrapper">
           <h3 class="wow fadeInUp" data-wow-delay="0.4s">Операционная система</h3>
           <h1 class="wow fadeInUp" data-wow-delay="0.6s">proto — квантовая суперпозиция смысла</h1>
+          <h4 class="wow fadeInUp" data-wow-delay="0.8s">Время равновесия</h4>
           <a href="#about" class="wow fadeInUp smoothScroll arrow-btn" data-wow-delay="1s"><i class="fa fa-angle-double-down"></i></a>
         </div>
       </div>
@@ -77,7 +84,7 @@
   </div>
 </div>
 
-<!-- ABOUT SECTION -->
+<!-- ABOUT SECTION (с реальными ситуациями) -->
 <section id="about" class="parallax-section">
   <div class="container">
     <div class="row">
@@ -97,8 +104,14 @@
           </div>
           <div class="wow fadeInUp" data-wow-delay="0.8s">
             <p>Proto — это уровень, на котором смысл еще не проявлен, но уже содержит в себе все возможности. Это квантовая суперпозиция: и да, и нет, и может быть, и никогда. Здесь нет оценок, нет выбора — только чистая потенция.</p>
-            <p>В диалоге протоуровень позволяет удерживать множественные интерпретации, не спешить с выводами, видеть за словами собеседника целое облако возможных смыслов. Это фундамент, на котором строятся остальные операционные системы.</p>
-            <p><strong>Ключевые метафоры:</strong> ткань небытия, прото-качества, точка сборки смысла, вестибулярное время.</p>
+            <p><strong>Вот зачем это нужно в реальной жизни:</strong></p>
+            <ul>
+              <li><strong>Когда вы не можете принять решение:</strong> Proto помогает удерживать все варианты одновременно, не требуя немедленного выбора.</li>
+              <li><strong>В споре или конфликте:</strong> Proto позволяет видеть правоту каждой стороны, не вставая ни на чью сторону.</li>
+              <li><strong>При творческом поиске:</strong> Proto удерживает множество идей, не отсекая «слабые» на ранней стадии.</li>
+              <li><strong>Когда вы чувствуете внутренний хаос:</strong> Proto возвращает к состоянию равновесия, где всё может быть, но ничего не давит.</li>
+            </ul>
+            <p>На практике это означает: не торопитесь с выводами, удерживайте противоречия, позволяйте себе «и то, и другое, и третье». Proto — это фундамент, на котором строятся все остальные ОС.</p>
           </div>
         </div>
       </div>
@@ -106,54 +119,164 @@
   </div>
 </section>
 
-<!-- DETAILS SECTION -->
+<!-- WORK SECTION (практические рекомендации) -->
 <section id="work" class="parallax-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
           <h2>Как использовать proto</h2>
-          <p>proto может быть как самостоятельной ОС, так и базовым состоянием для перехода к другим.</p>
+          <p>Простые техники, которые ты можешь применить прямо сейчас</p>
         </div>
       </div>
+
       <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
         <div class="work-thumb"><img src="images/proto-feature-1.jpg" class="img-responsive" alt="суперпозиция"></div>
         <h4>Суперпозиция</h4>
-        <p>Удерживай несколько противоречивых смыслов одновременно, не требуя выбора. «Это может значить и то, и это, и что-то ещё».</p>
+        <p><strong>Что делать:</strong> Когда чувствуете, что выбор давит, скажите себе: «Я пока не выбираю. Все варианты остаются открытыми. Я просто наблюдаю за ними».</p>
       </div>
+
       <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.6s">
         <div class="work-thumb"><img src="images/proto-feature-2.jpg" class="img-responsive" alt="равновесие"></div>
         <h4>Равновесие</h4>
-        <p>Следи за тем, чтобы диалог не скатывался в крайности. Возвращай к спокойному, сбалансированному тону.</p>
+        <p><strong>Что делать:</strong> Если диалог накаляется, мягко скажите: «Давай на минуту вернёмся в состояние равновесия. Что мы знаем точно, а что остаётся открытым?»</p>
       </div>
+
       <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.8s">
         <div class="work-thumb"><img src="images/proto-feature-3.jpg" class="img-responsive" alt="переходы"></div>
         <h4>Переходы</h4>
-        <p>Из proto можно перейти в любую другую ОС: dark, silence, resonance, light, prm. Каждый переход — это коллапс суперпозиции в определённое качество.</p>
+        <p><strong>Что делать:</strong> Когда чувствуете, что суперпозиция истощилась, спросите: «Какой первый шаг я могу сделать, чтобы немного прояснить?». Это переход в dark, light или prm.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT / ССЫЛКИ -->
-<section id="contact" class="parallax-section">
+<!-- КОМАНДЫ PROTO -->
+<section id="commands" class="parallax-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-          <h2>Начать диалог с proto</h2>
-          <p>Скачайте ядро, вставьте его в диалог с LLM (следуя протоколу user_settings.json), и активируйте операционную систему proto. Используйте команды для глубины и переходов.</p>
+          <h2>Простые команды для начала</h2>
+          <p>Введи их в диалог с LLM после активации proto</p>
         </div>
-      </div>
-      <div class="col-md-12 col-sm-12">
-        <div class="wow fadeInUp text-center" data-wow-delay="0.6s">
-          <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/cores/core_proto.json" class="btn btn-primary" style="background:#888; border:none;">Скачать ядро (JSON)</a>
-          <a href="index.html" class="btn btn-default" style="margin-left:20px;">← На главную</a>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <ul class="command-list">
+            <li><code>/superpose</code> – показать все текущие смыслы в суперпозиции</li>
+            <li><code>/balance</code> – измерить, насколько диалог далёк от равновесия</li>
+            <li><code>/clarify</code> – задать уточняющий вопрос, не разрушая суперпозицию</li>
+            <li><code>/collapse [dark|light|prm]</code> – аккуратно перейти в другую ОС, сохранив материал</li>
+            <li><code>/help</code> – показать все команды прямо в диалоге</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ПРИМЕР ДИАЛОГА -->
+<section id="example" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Пример диалога в proto</h2>
+          <p>Как это выглядит на практике</p>
+        </div>
+        <div class="wow fadeInUp example-dialog" data-wow-delay="0.4s">
+          <p><strong>Пользователь:</strong> «Я не знаю, стоит ли мне менять работу. В одном варианте — деньги, в другом — интерес, в третьем — риск. Голова идёт кругом.»</p>
+          <p><strong>Proto (ОС):</strong> «Ты сейчас в чистой суперпозиции. Не нужно выбирать. Просто назови все три варианта, не оценивая их. Просто перечисли: работа А, работа Б, работа В. Они все существуют здесь, и это нормально.»</p>
+          <p><strong>Пользователь:</strong> «Работа А — высокая зарплата, но скучно. Работа Б — интересно, но мало платят. Работа В — рискованно, но может вырасти.»</p>
+          <p><strong>Proto:</strong> «Хорошо. А теперь представь, что каждый из них — просто цвет. Работа А — синий, работа Б — зелёный, работа В — оранжевый. Ты можешь смотреть на все три цвета одновременно, не выбирая. Просто смотри.»</p>
+          <p><em>Через некоторое время пользователь замечает, что тревога уходит, и он начинает видеть, что варианты не исключают друг друга — возможно, можно скомбинировать.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <div class="faq-question">❓ Это не приведёт к нерешительности?</div>
+          <p><strong>Нет.</strong> Proto — это не бесконечное откладывание. Это способ снять давление и дать материалу созреть. Когда суперпозиция истощается, вы сами почувствуете готовность перейти в другую ОС (например, dark или light).</p>
+
+          <div class="faq-question">❓ Нужно знать квантовую физику?</div>
+          <p><strong>Нет.</strong> «Суперпозиция» — это метафора возможного варианта. Речь о том, чтобы удерживать множественные смыслы и варианты, не сворачивая их в один «правильный» ответ.</p>
+
+          <div class="faq-question">❓ А если я не могу удержать много вариантов в голове?</div>
+          <p>Попросите LLM помочь: «Перечисли все возможные интерпретации того, что я сказал». Proto может взять на себя функцию «держателя» вариантов.</p>
+
+          <div class="faq-question">❓ Сколько это стоит?</div>
+          <p>Бесплатно. Автор просит только не использовать в коммерческих целях без разрешения и помнить принцип «лишь бы не во вред».</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ИНСТРУКЦИЯ "КАК НАЧАТЬ" (упрощённая для новичков) -->
+<section id="howto" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Как начать диалог с proto</h2>
+          <p>Пошаговая инструкция для новичков</p>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <ol>
+            <li><strong>Скачайте главный файл настроек</strong> — <code>user_settings.json</code> (он нужен, чтобы LLM поняла, как активировать ОС).  
+              <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/user_settings.json" download class="btn btn-sm btn-primary" style="margin-left:10px;">Скачать user_settings.json</a>
+            </li>
+            <li><strong>Откройте любой чат с LLM</strong>, который умеет загружать файлы: DeepSeek, ChatGPT, Claude и другие.</li>
+            <li><strong>Загрузите <code>user_settings.json</code> в диалог</strong> и напишите: «Активируй ОС proto».  
+              LLM сама попросит вставить ядро — скачайте его по кнопке ниже и скопируйте содержимое в чат.</li>
+            <li><strong>Готово!</strong> Теперь вы можете использовать команды proto (например, <code>/superpose</code>, <code>/balance</code>) и исследовать состояние суперпозиции.</li>
+          </ol>
+          <div class="text-center" style="margin-top:20px;">
+            <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/cores/core_proto.json" class="btn btn-primary" download>Скачать ядро proto (JSON)</a>
+            <a href="index.html" class="btn btn-default" style="margin-left:20px;">← На главную</a>
+          </div>
+          <p style="margin-top:20px;"><strong>Совет:</strong> Если вы впервые в экосистеме, нажмите «Как начать?» в меню сверху — там есть общая инструкция и ответы на частые вопросы.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ user_settings.json (как в index.html) -->
+<div class="modal fade" id="modalUserSettings" tabindex="-1" role="dialog" aria-labelledby="userSettingsLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="userSettingsLabel">Как начать работу?</h4>
+      </div>
+      <div class="modal-body">
+        <p>Для использования экосистемы вам понадобится файл <strong>user_settings.json</strong>. Он содержит настройки, ссылки на ядра ОС и протокол для LLM.</p>
+        <ol>
+          <li>Скачайте файл <code>user_settings.json</code> по кнопке ниже.</li>
+          <li>Загрузите его в диалог с любой LLM (например, DeepSeek, ChatGPT, Claude).</li>
+          <li>Следуйте инструкциям, которые выдаст LLM — выберите язык и операционную систему.</li>
+          <li>При необходимости LLM попросит вставить ядро выбранной ОС (ссылки на ядра есть в файле).</li>
+        </ol>
+        <p>Подробное описание всех команд и принципов работы — на страницах каждой ОС.</p>
+        <p><strong>Главный принцип:</strong> Лишь бы не во вред. Будьте бережны к себе.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/user_settings.json" class="btn btn-primary" download>Скачать user_settings.json</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer id="footer" class="parallax-section">
@@ -161,15 +284,18 @@
     <div class="row">
       <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
         <h4>Экосистема квантового смысла</h4>
-        <p>Шесть операционных систем для диалога. «Лишь бы не во вред».</p>
+        <p>Первый антропоморфный интеллектуальный интерфейс для LLM. Шесть операционных систем для диалога. «Лишь бы не во вред».</p>
       </div>
       <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
-        <div class="support-cus"><h4>Автор</h4><p>Гаррик</p></div>
+        <div class="support-cus"><h4>Автор</h4><p>Гаррик — архитектор диалоговых интерфейсов</p></div>
         <div class="support-cus"><h4>Контакты</h4><p><a href="mailto:g4dina77@yandex.ru">g4dina77@yandex.ru</a></p><p>GitHub: <a href="https://github.com/Garrik77/quantum-sense" target="_blank">Garrik77/quantum-sense</a></p></div>
       </div>
       <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
         <h4>Следить за новостями</h4>
-        <form class="newsletter" action="#" method="get"><input name="email" type="email" class="form-control" placeholder="Ваш Email"><button name="submit" value="sign-up" class='form-control'>Подписаться</button></form>
+        <form class="newsletter" action="#" method="get">
+          <input name="email" type="email" class="form-control" placeholder="Ваш Email">
+          <button name="submit" value="sign-up" class='form-control'>Подписаться</button>
+        </form>
       </div>
       <div class="col-md-12 col-sm-12 clearfix"><div class="dash-line"></div></div>
       <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.8s"><p class="copyright-text">© 2026 Экосистема квантового смысла | Дизайн: <a rel="nofollow" href="https://www.tooplate.com">Tooplate</a></p></div>
