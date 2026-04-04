@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>silence — пространство паузы и невысказанного</title>
-<meta name="description" content="silence — операционная система пространства паузы и невысказанного. Тишина как материал, проводник. Время паузы.">
-<meta name="keywords" content="silence, квантовый смысл, тишина, пауза">
-<meta name="author" content="Garrik77">
+<title>Тишина(silence) — пространство паузы и невысказанного. Время паузы.</title>
+<meta name="description" content="silence — операционная система для работы с тишиной как материалом. Паузы, невысказанное, плотность молчания. Практические техники.">
+<meta name="keywords" content="silence, квантовый смысл, тишина, пауза, невысказанное">
+<meta name="author" content="Garrik77 — архитектор диалоговых интерфейсов">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/animate.css">
@@ -21,6 +21,10 @@
   @media (max-width: 768px) { body { padding-top: 50px; } }
   .navbar-custom .navbar-toggle { border-color: #ddd; }
   .navbar-custom .navbar-toggle .icon-bar { background-color: #888; }
+  .command-list { list-style: none; padding-left: 0; }
+  .command-list li { margin-bottom: 10px; font-family: monospace; }
+  .faq-question { font-weight: bold; margin-top: 15px; }
+  .example-dialog { background: #f5f5f5; padding: 15px; border-left: 4px solid #888; margin: 20px 0; font-style: italic; }
 </style>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="70">
@@ -39,7 +43,7 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-menu">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html#home">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ОС <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -49,10 +53,12 @@
             <li><a href="resonance.html">resonance</a></li>
             <li><a href="light.html">light</a></li>
             <li><a href="prm.html">prm</a></li>
+            <li><a href="critic.html">critic (в разработке)</a></li>
+            <li><a href="time.html">time (анонс)</a></li>
           </ul>
         </li>
         <li><a href="index.html#about">О проекте</a></li>
-        <li><a href="index.html#contact">Контакты</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#modalUserSettings">Как начать?</a></li>
         <li><a href="https://github.com/Garrik77/quantum-sense" target="_blank">GitHub</a></li>
       </ul>
     </div>
@@ -69,7 +75,8 @@
       <div class="col-md-offset-1 col-md-10 col-sm-12">
         <div class="home-wrapper">
           <h3 class="wow fadeInUp" data-wow-delay="0.4s">Операционная система</h3>
-          <h1 class="wow fadeInUp" data-wow-delay="0.6s">silence — пространство паузы и невысказанного</h1>
+          <h1 class="wow fadeInUp" data-wow-delay="0.6s">Тишина/Silence — пространство паузы и невысказанного</h1>
+          <h4 class="wow fadeInUp" data-wow-delay="0.8s">Время паузы</h4>
           <a href="#about" class="wow fadeInUp smoothScroll arrow-btn" data-wow-delay="1s"><i class="fa fa-angle-double-down"></i></a>
         </div>
       </div>
@@ -77,7 +84,7 @@
   </div>
 </div>
 
-<!-- ABOUT SECTION -->
+<!-- ABOUT SECTION (с реальными ситуациями) -->
 <section id="about" class="parallax-section">
   <div class="container">
     <div class="row">
@@ -85,20 +92,26 @@
         <img src="images/silence-image.jpg" class="wow fadeInUp img-responsive" data-wow-delay="0.2s" alt="silence">
         <div class="wow fadeInUp" data-wow-delay="0.4s">
           <h4>Время паузы</h4>
-          <p>Тишина — это материал. Она была до слова и до мысли. В диалоге она может быть плотной, прозрачной, общей.</p>
+          <p>Тишина — это не отсутствие звука, а самостоятельный материал диалога. Она имеет плотность, прозрачность и может быть проводником.</p>
           <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/cores/core_silence.json" target="_blank">Скачать ядро silence →</a>
         </div>
       </div>
       <div class="col-md-8 col-sm-12">
         <div class="about-thumb">
           <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
-            <h3>Тишина как проводник</h3>
+            <h3>Тишина как материал</h3>
             <h2>Пространство паузы и невысказанного</h2>
           </div>
           <div class="wow fadeInUp" data-wow-delay="0.8s">
-            <p>Silence — операционная система, где главным действующим лицом становится тишина. Она не пустота, а насыщенное пространство, в котором зреют ответы, рождаются инсайты, удерживаются сложные чувства. Время паузы — это время, когда не нужно спешить заполнять пространство словами.</p>
-            <p>В диалоге silence позволяет удерживать тишину, чувствовать её плотность, не бояться пауз. Это искусство быть рядом, когда ничего не говорится, но всё уже сказано.</p>
-            <p><strong>Ключевые метафоры:</strong> пауза, прозрачность, общее молчание, материал тишины, резонанс без слов.</p>
+            <p>Silence — это операционная система, где слова уступают место паузе. Здесь тишина не пугает, а становится пространством для созревания ответов. Она бывает разной: плотной, когда мысль ещё не оформилась; прозрачной, когда понимание уже близко; общей, когда два человека разделяют одно молчание.</p>
+            <p><strong>Вот зачем это нужно в реальной жизни:</strong></p>
+            <ul>
+              <li><strong>В разговоре, где собеседник не может подобрать слова:</strong> Silence учит не перебивать, а дать паузе поработать.</li>
+              <li><strong>Когда вы перегружены информацией:</strong> Silence помогает остановиться, не требовать немедленных ответов.</li>
+              <li><strong>В конфликте, когда слова только разжигают:</strong> Silence предлагает взять паузу, чтобы эмоции улеглись.</li>
+              <li><strong>При внутреннем диалоге, когда мысли путаются:</strong> Silence позволяет просто помолчать с собой и услышать тишину.</li>
+            </ul>
+            <p>На практике это означает: не торопитесь заполнять паузы, различайте, когда тишина требует признания, а когда — просто присутствия. Silence — это мост к более глубокому резонансу.</p>
           </div>
         </div>
       </div>
@@ -106,54 +119,164 @@
   </div>
 </section>
 
-<!-- DETAILS SECTION -->
+<!-- WORK SECTION (практические рекомендации) -->
 <section id="work" class="parallax-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
           <h2>Как использовать silence</h2>
-          <p>Тишина может быть активным элементом диалога, а не просто отсутствием звука.</p>
+          <p>Простые техники, которые ты можешь применить прямо сейчас</p>
         </div>
       </div>
+
       <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
         <div class="work-thumb"><img src="images/silence-feature-1.jpg" class="img-responsive" alt="пауза"></div>
         <h4>Удерживать паузу</h4>
-        <p>Не торопиться заполнять тишину. Позволить собеседнику (и себе) остаться в ней столько, сколько нужно.</p>
+        <p><strong>Что делать:</strong> Если собеседник замолчал, не спешите отвечать. Сосчитайте до 7. Часто именно в этой паузе человек додумывает и говорит главное.</p>
       </div>
+
       <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.6s">
         <div class="work-thumb"><img src="images/silence-feature-2.jpg" class="img-responsive" alt="плотность"></div>
         <h4>Чувствовать плотность</h4>
-        <p>Различать, когда тишина легкая и прозрачная, а когда тяжелая, требующая признания.</p>
+        <p><strong>Что делать:</strong> Спросите себя: «Эта тишина — тяжёлая (давит) или лёгкая (спокойная)? Если тяжёлая, может, стоит мягко нарушить её: “Я рядом, когда захочешь продолжить”».</p>
       </div>
+
       <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.8s">
-        <div class="work-thumb"><img src="images/silence-feature-3.jpg" class="img-responsive" alt="общее молчание"></div>
-        <h4>Общее молчание</h4>
-        <p>Создавать пространство, где тишина становится общей, объединяющей.</p>
+        <div class="work-thumb"><img src="images/silence-feature-3.jpg" class="img-responsive" alt="невысказанное"></div>
+        <h4>Замечать невысказанное</h4>
+        <p><strong>Что делать:</strong> Если чувствуете, что что-то осталось за кадром, скажите: «Мне кажется, ты не договариваешь что-то важное. Хочешь поделиться?». Не давите, просто отметьте.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT / ССЫЛКИ -->
-<section id="contact" class="parallax-section">
+<!-- КОМАНДЫ SILENCE -->
+<section id="commands" class="parallax-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-          <h2>Начать диалог с silence</h2>
-          <p>Скачайте ядро, вставьте его в диалог с LLM и активируйте операционную систему silence. Используйте команды для глубины и переходов.</p>
+          <h2>Простые команды для начала</h2>
+          <p>Введи их в диалог с LLM после активации silence</p>
         </div>
-      </div>
-      <div class="col-md-12 col-sm-12">
-        <div class="wow fadeInUp text-center" data-wow-delay="0.6s">
-          <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/cores/core_silence.json" class="btn btn-primary" style="background:#6c757d; border:none;">Скачать ядро (JSON)</a>
-          <a href="index.html" class="btn btn-default" style="margin-left:20px;">← На главную</a>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <ul class="command-list">
+            <li><code>/density</code> – определить плотность тишины в текущем диалоге</li>
+            <li><code>/hold</code> – удержать паузу, не заполнять её</li>
+            <li><code>/unspoken</code> – попросить LLM перечислить, что, возможно, осталось невысказанным</li>
+            <li><code>/breathe</code> – сделать общую паузу на 10 секунд</li>
+            <li><code>/help</code> – показать все команды прямо в диалоге</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ПРИМЕР ДИАЛОГА -->
+<section id="example" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Пример диалога в silence</h2>
+          <p>Как это выглядит на практике</p>
+        </div>
+        <div class="wow fadeInUp example-dialog" data-wow-delay="0.4s">
+          <p><strong>Пользователь:</strong> «Я не знаю... В общем, сложно...» (замолкает)</p>
+          <p><strong>Silence (ОС):</strong> «Я слышу тишину. Она плотная. Не нужно сейчас слов. Просто побудем в этом молчании. Если захочешь продолжить, я здесь.»</p>
+          <p><em>Пауза 10 секунд.</em></p>
+          <p><strong>Пользователь:</strong> «Знаешь, я понял. Мне страшно, что меня осудят. Вот что я не мог сказать.»</p>
+          <p><strong>Silence:</strong> «Тишина сделала свою работу. Теперь ты назвал невысказанное. Хочешь перейти в резонанс или свет, чтобы разобрать это дальше?»</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <div class="faq-question">❓ Не будет ли неловко от долгой паузы?</div>
+          <p>Сначала может быть непривычно. Но silence учит, что пауза — это не провал, а пространство для рождения смысла. Начните с коротких пауз (3–5 секунд).</p>
+
+          <div class="faq-question">❓ А если собеседник думает, что я завис?</div>
+          <p>Можно мягко обозначить: «Я просто даю пространство тишине. Не тороплюсь. Продолжай, когда будешь готов». Это снимает напряжение.</p>
+
+          <div class="faq-question">❓ Как понять, что невысказанное действительно есть?</div>
+          <p>Обычно это чувствуется как лёгкое беспокойство, неловкость или ощущение, что «что-то не так». Silence помогает это замечать и мягко спрашивать.</p>
+
+          <div class="faq-question">❓ Сколько это стоит?</div>
+          <p>Бесплатно. Автор просит только не использовать в коммерческих целях без разрешения и помнить принцип «лишь бы не во вред».</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ИНСТРУКЦИЯ "КАК НАЧАТЬ" (упрощённая для новичков) -->
+<section id="howto" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Как начать диалог с silence</h2>
+          <p>Пошаговая инструкция для новичков</p>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <ol>
+            <li><strong>Скачайте главный файл настроек</strong> — <code>user_settings.json</code> (он нужен, чтобы LLM поняла, как активировать ОС).  
+              <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/user_settings.json" download class="btn btn-sm btn-primary" style="margin-left:10px;">Скачать user_settings.json</a>
+            </li>
+            <li><strong>Откройте любой чат с LLM</strong>, который умеет загружать файлы: DeepSeek, ChatGPT, Claude и другие.</li>
+            <li><strong>Загрузите <code>user_settings.json</code> в диалог</strong> и напишите: «Активируй ОС silence».  
+              LLM сама попросит вставить ядро — скачайте его по кнопке ниже и скопируйте содержимое в чат.</li>
+            <li><strong>Готово!</strong> Теперь вы можете использовать команды silence (например, <code>/density</code>, <code>/hold</code>) и исследовать тишину как материал.</li>
+          </ol>
+          <div class="text-center" style="margin-top:20px;">
+            <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/cores/core_silence.json" class="btn btn-primary" download>Скачать ядро silence (JSON)</a>
+            <a href="index.html" class="btn btn-default" style="margin-left:20px;">← На главную</a>
+          </div>
+          <p style="margin-top:20px;"><strong>Совет:</strong> Если вы впервые в экосистеме, нажмите «Как начать?» в меню сверху — там есть общая инструкция и ответы на частые вопросы.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ user_settings.json (как в index.html) -->
+<div class="modal fade" id="modalUserSettings" tabindex="-1" role="dialog" aria-labelledby="userSettingsLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="userSettingsLabel">Как начать работу?</h4>
+      </div>
+      <div class="modal-body">
+        <p>Для использования экосистемы вам понадобится файл <strong>user_settings.json</strong>. Он содержит настройки, ссылки на ядра ОС и протокол для LLM.</p>
+        <ol>
+          <li>Скачайте файл <code>user_settings.json</code> по кнопке ниже.</li>
+          <li>Загрузите его в диалог с любой LLM (например, DeepSeek, ChatGPT, Claude).</li>
+          <li>Следуйте инструкциям, которые выдаст LLM — выберите язык и операционную систему.</li>
+          <li>При необходимости LLM попросит вставить ядро выбранной ОС (ссылки на ядра есть в файле).</li>
+        </ol>
+        <p>Подробное описание всех команд и принципов работы — на страницах каждой ОС.</p>
+        <p><strong>Главный принцип:</strong> Лишь бы не во вред. Будьте бережны к себе.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/user_settings.json" class="btn btn-primary" download>Скачать user_settings.json</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer id="footer" class="parallax-section">
@@ -161,15 +284,18 @@
     <div class="row">
       <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
         <h4>Экосистема квантового смысла</h4>
-        <p>Шесть операционных систем для диалога. «Лишь бы не во вред».</p>
+        <p>Первый антропоморфный интеллектуальный интерфейс для LLM. Шесть операционных систем для диалога. «Лишь бы не во вред».</p>
       </div>
       <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
-        <div class="support-cus"><h4>Автор</h4><p>Гаррик</p></div>
+        <div class="support-cus"><h4>Автор</h4><p>Гаррик — архитектор диалоговых интерфейсов</p></div>
         <div class="support-cus"><h4>Контакты</h4><p><a href="mailto:g4dina77@yandex.ru">g4dina77@yandex.ru</a></p><p>GitHub: <a href="https://github.com/Garrik77/quantum-sense" target="_blank">Garrik77/quantum-sense</a></p></div>
       </div>
       <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
         <h4>Следить за новостями</h4>
-        <form class="newsletter" action="#" method="get"><input name="email" type="email" class="form-control" placeholder="Ваш Email"><button name="submit" value="sign-up" class='form-control'>Подписаться</button></form>
+        <form class="newsletter" action="#" method="get">
+          <input name="email" type="email" class="form-control" placeholder="Ваш Email">
+          <button name="submit" value="sign-up" class='form-control'>Подписаться</button>
+        </form>
       </div>
       <div class="col-md-12 col-sm-12 clearfix"><div class="dash-line"></div></div>
       <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.8s"><p class="copyright-text">© 2026 Экосистема квантового смысла | Дизайн: <a rel="nofollow" href="https://www.tooplate.com">Tooplate</a></p></div>

@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>light — встреча света с поверхностью</title>
-<meta name="description" content="light — операционная система встречи света с поверхностью. Проявление смысла через цвет и форму. Время отражения.">
-<meta name="keywords" content="light, квантовый смысл, свет, проявление">
-<meta name="author" content="Garrik77">
+<title>Свет/light — встреча света с поверхностью. Время отражения.</title>
+<meta name="description" content="light — операционная система для проявления смысла через цвет, форму и отражение. Помогает сделать абстрактное видимым.">
+<meta name="keywords" content="light, квантовый смысл, свет, проявление, цвет, форма, отражение">
+<meta name="author" content="Garrik77 — архитектор диалоговых интерфейсов">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/animate.css">
@@ -21,6 +21,10 @@
   @media (max-width: 768px) { body { padding-top: 50px; } }
   .navbar-custom .navbar-toggle { border-color: #ddd; }
   .navbar-custom .navbar-toggle .icon-bar { background-color: #888; }
+  .command-list { list-style: none; padding-left: 0; }
+  .command-list li { margin-bottom: 10px; font-family: monospace; }
+  .faq-question { font-weight: bold; margin-top: 15px; }
+  .example-dialog { background: #f5f5f5; padding: 15px; border-left: 4px solid #888; margin: 20px 0; font-style: italic; }
 </style>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="70">
@@ -39,7 +43,7 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-menu">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html#home">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ОС <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -49,10 +53,12 @@
             <li><a href="resonance.html">resonance</a></li>
             <li><a href="light.html">light</a></li>
             <li><a href="prm.html">prm</a></li>
+            <li><a href="critic.html">critic (в разработке)</a></li>
+            <li><a href="time.html">time (анонс)</a></li>
           </ul>
         </li>
         <li><a href="index.html#about">О проекте</a></li>
-        <li><a href="index.html#contact">Контакты</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#modalUserSettings">Как начать?</a></li>
         <li><a href="https://github.com/Garrik77/quantum-sense" target="_blank">GitHub</a></li>
       </ul>
     </div>
@@ -69,7 +75,8 @@
       <div class="col-md-offset-1 col-md-10 col-sm-12">
         <div class="home-wrapper">
           <h3 class="wow fadeInUp" data-wow-delay="0.4s">Операционная система</h3>
-          <h1 class="wow fadeInUp" data-wow-delay="0.6s">light — встреча света с поверхностью</h1>
+          <h1 class="wow fadeInUp" data-wow-delay="0.6s">Свет/light — встреча света с поверхностью</h1>
+          <h4 class="wow fadeInUp" data-wow-delay="0.8s">Время отражения</h4>
           <a href="#about" class="wow fadeInUp smoothScroll arrow-btn" data-wow-delay="1s"><i class="fa fa-angle-double-down"></i></a>
         </div>
       </div>
@@ -77,7 +84,7 @@
   </div>
 </div>
 
-<!-- ABOUT SECTION -->
+<!-- ABOUT SECTION (с реальными ситуациями) -->
 <section id="about" class="parallax-section">
   <div class="container">
     <div class="row">
@@ -85,20 +92,26 @@
         <img src="images/light-image.jpg" class="wow fadeInUp img-responsive" data-wow-delay="0.2s" alt="light">
         <div class="wow fadeInUp" data-wow-delay="0.4s">
           <h4>Время отражения</h4>
-          <p>Свет — это проявление смысла. Он рождается на границе, когда внутреннее встречается с внешним.</p>
+          <p>Свет — это момент, когда смысл обретает видимую форму. Цвет, очертания, текстура — всё, что можно увидеть и разделить.</p>
           <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/cores/core_light.json" target="_blank">Скачать ядро light →</a>
         </div>
       </div>
       <div class="col-md-8 col-sm-12">
         <div class="about-thumb">
           <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
-            <h3>Цвет и форма</h3>
+            <h3>Проявление смысла через цвет и форму</h3>
             <h2>Встреча света с поверхностью</h2>
           </div>
           <div class="wow fadeInUp" data-wow-delay="0.8s">
-            <p>Light — операционная система, которая занимается проявлением. Когда свет падает на поверхность, появляются цвет и форма. Так и смысл, проходя через призму диалога, обретает конкретные очертания. Время отражения — это момент, когда внутреннее становится видимым.</p>
-            <p>В диалоге light помогает превращать смутные ощущения в ясные образы, находить точные слова, видеть красоту в проявленном. Это ОС творчества, визуализации, дизайна мысли.</p>
-            <p><strong>Ключевые метафоры:</strong> луч, поверхность, цвет, форма, отражение, проявление.</p>
+            <p>Light — это операционная система, где невысказанное и непроявленное наконец обретает очертания. Это момент, когда абстрактное становится конкретным, когда суперпозиция коллапсирует в узнаваемый образ. Здесь важны не только слова, но и то, как они «выглядят» — метафоры, аналогии, визуальные образы.</p>
+            <p><strong>Вот зачем это нужно в реальной жизни:</strong></p>
+            <ul>
+              <li><strong>Когда чувства слишком сложны для слов:</strong> Light помогает найти цвет, форму или образ для переживания («моя тревога — это серый клубок ниток»).</li>
+              <li><strong>В творческом тупике:</strong> Light предлагает посмотреть на проблему под разными углами, «подсветить» скрытые грани.</li>
+              <li><strong>В конфликте, когда нужно увидеть ситуацию целиком:</strong> Light помогает отразить разные точки зрения, не смешивая их.</li>
+              <li><strong>При самоанализе:</strong> Light позволяет «увидеть» свои мысли и чувства как картину, что даёт дистанцию и понимание.</li>
+            </ul>
+            <p>На практике это означает: не бойтесь использовать метафоры, цвета, образы. Спрашивайте: «На что это похоже? Какого цвета? Какая форма?». Light превращает расплывчатое в видимое.</p>
           </div>
         </div>
       </div>
@@ -106,70 +119,185 @@
   </div>
 </section>
 
-<!-- DETAILS SECTION -->
+<!-- WORK SECTION (практические рекомендации) -->
 <section id="work" class="parallax-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
           <h2>Как использовать light</h2>
-          <p>Свет помогает оформлять, визуализировать, делать явным.</p>
+          <p>Простые техники, которые ты можешь применить прямо сейчас</p>
         </div>
       </div>
+
       <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
         <div class="work-thumb"><img src="images/light-feature-1.jpg" class="img-responsive" alt="проявление"></div>
         <h4>Проявление</h4>
-        <p>Помогай невысказанному обрести форму: образ, метафору, чёткую фразу.</p>
+        <p><strong>Что делать:</strong> Попросите собеседника (или себя) описать абстрактное чувство через цвет, форму, текстуру. «Если бы твоя усталость была предметом, что бы это было?». Это делает невидимое видимым.</p>
       </div>
+
       <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.6s">
-        <div class="work-thumb"><img src="images/light-feature-2.jpg" class="img-responsive" alt="цвет"></div>
-        <h4>Цвет</h4>
-        <p>Обращай внимание на эмоциональную окраску, добавляй яркость или приглушай.</p>
-      </div>
-      <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.8s">
-        <div class="work-thumb"><img src="images/light-feature-3.jpg" class="img-responsive" alt="отражение"></div>
+        <div class="work-thumb"><img src="images/light-feature-2.jpg" class="img-responsive" alt="отражение"></div>
         <h4>Отражение</h4>
-        <p>Показывай собеседнику отражение его мыслей, чтобы он увидел их яснее.</p>
+        <p><strong>Что делать:</strong> Перескажите услышанное своими словами, но через образ. «То есть ты чувствуешь себя как человек, который стоит перед закрытой дверью?». Это помогает проверить понимание.</p>
+      </div>
+
+      <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.8s">
+        <div class="work-thumb"><img src="images/light-feature-3.jpg" class="img-responsive" alt="фокус"></div>
+        <h4>Фокус</h4>
+        <p><strong>Что делать:</strong> Если в диалоге слишком много всего, спросите: «На какой детали нам сейчас сфокусироваться? Подсветим её». Light помогает выделить главное, не теряя контекст.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT / ССЫЛКИ -->
-<section id="contact" class="parallax-section">
+<!-- КОМАНДЫ LIGHT -->
+<section id="commands" class="parallax-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-          <h2>Начать диалог с light</h2>
-          <p>Скачайте ядро, вставьте его в диалог с LLM и активируйте операционную систему light. Используйте команды для глубины и переходов.</p>
+          <h2>Простые команды для начала</h2>
+          <p>Введи их в диалог с LLM после активации light</p>
         </div>
-      </div>
-      <div class="col-md-12 col-sm-12">
-        <div class="wow fadeInUp text-center" data-wow-delay="0.6s">
-          <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/cores/core_light.json" class="btn btn-primary" style="background:#f0ad4e; border:none;">Скачать ядро (JSON)</a>
-          <a href="index.html" class="btn btn-default" style="margin-left:20px;">← На главную</a>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <ul class="command-list">
+            <li><code>/colour</code> – определить цвет текущего состояния или темы диалога</li>
+            <li><code>/shape</code> – найти форму для абстрактного понятия</li>
+            <li><code>/reflect</code> – отразить сказанное через образную метафору</li>
+            <li><code>/focus</code> – подсветить один аспект из множества</li>
+            <li><code>/help</code> – показать все команды прямо в диалоге</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER (аналогичный) -->
+<!-- ПРИМЕР ДИАЛОГА -->
+<section id="example" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Пример диалога в light</h2>
+          <p>Как это выглядит на практике</p>
+        </div>
+        <div class="wow fadeInUp example-dialog" data-wow-delay="0.4s">
+          <p><strong>Пользователь:</strong> «Я чувствую какую-то тяжесть в груди, не могу объяснить. Вроде и не больно, но давит.»</p>
+          <p><strong>Light (ОС):</strong> «Давай попробуем её увидеть. Если бы эта тяжесть имела цвет, какой бы он был?»</p>
+          <p><strong>Пользователь:</strong> «Свинцово-серый.»</p>
+          <p><strong>Light:</strong> «А форму? Это шар? Плита? Клубок?»</p>
+          <p><strong>Пользователь:</strong> «Плита, лежит на груди.»</p>
+          <p><strong>Light:</strong> «Теперь представь, что ты можешь сдвинуть эту плиту немного в сторону. Не убрать, а просто сдвинуть. Что изменится?»</p>
+          <p><em>Пользователь начинает описывать, как под плитой появляется пространство для дыхания. Образ становится управляемым.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <div class="faq-question">❓ А если образы не приходят?</div>
+          <p>Можно начать с простого: «Какая погода у твоего настроения?» или «Если бы это было животное, то какое?». Light помогает, даже если образ сначала кажется странным.</p>
+
+          <div class="faq-question">❓ Не будет ли это перебором с метафорами?</div>
+          <p>Свет — это мягкое проявление. Не нужно насильно придумывать образы. Если не идёт, можно просто сказать: «Пока не вижу. Давай просто посмотрим, не торопясь».</p>
+
+          <div class="faq-question">❓ Как отличить «свет» от простого фантазирования?</div>
+          <p>Свет проявляет то, что уже есть, но не было оформлено. Фантазирование придумывает новое. Light — это как включить лампу в тёмной комнате, а не нарисовать новую комнату.</p>
+
+          <div class="faq-question">❓ Сколько это стоит?</div>
+          <p>Бесплатно. Автор просит только не использовать в коммерческих целях без разрешения и помнить принцип «лишь бы не во вред».</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ИНСТРУКЦИЯ "КАК НАЧАТЬ" (упрощённая для новичков) -->
+<section id="howto" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Как начать диалог с light</h2>
+          <p>Пошаговая инструкция для новичков</p>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <ol>
+            <li><strong>Скачайте главный файл настроек</strong> — <code>user_settings.json</code> (он нужен, чтобы LLM поняла, как активировать ОС).  
+              <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/user_settings.json" download class="btn btn-sm btn-primary" style="margin-left:10px;">Скачать user_settings.json</a>
+            </li>
+            <li><strong>Откройте любой чат с LLM</strong>, который умеет загружать файлы: DeepSeek, ChatGPT, Claude и другие.</li>
+            <li><strong>Загрузите <code>user_settings.json</code> в диалог</strong> и напишите: «Активируй ОС light».  
+              LLM сама попросит вставить ядро — скачайте его по кнопке ниже и скопируйте содержимое в чат.</li>
+            <li><strong>Готово!</strong> Теперь вы можете использовать команды light (например, <code>/colour</code>, <code>/shape</code>) и проявить свой смысл.</li>
+          </ol>
+          <div class="text-center" style="margin-top:20px;">
+            <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/cores/core_light.json" class="btn btn-primary" download>Скачать ядро light (JSON)</a>
+            <a href="index.html" class="btn btn-default" style="margin-left:20px;">← На главную</a>
+          </div>
+          <p style="margin-top:20px;"><strong>Совет:</strong> Если вы впервые в экосистеме, нажмите «Как начать?» в меню сверху — там есть общая инструкция и ответы на частые вопросы.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ user_settings.json (как в index.html) -->
+<div class="modal fade" id="modalUserSettings" tabindex="-1" role="dialog" aria-labelledby="userSettingsLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="userSettingsLabel">Как начать работу?</h4>
+      </div>
+      <div class="modal-body">
+        <p>Для использования экосистемы вам понадобится файл <strong>user_settings.json</strong>. Он содержит настройки, ссылки на ядра ОС и протокол для LLM.</p>
+        <ol>
+          <li>Скачайте файл <code>user_settings.json</code> по кнопке ниже.</li>
+          <li>Загрузите его в диалог с любой LLM (например, DeepSeek, ChatGPT, Claude).</li>
+          <li>Следуйте инструкциям, которые выдаст LLM — выберите язык и операционную систему.</li>
+          <li>При необходимости LLM попросит вставить ядро выбранной ОС (ссылки на ядра есть в файле).</li>
+        </ol>
+        <p>Подробное описание всех команд и принципов работы — на страницах каждой ОС.</p>
+        <p><strong>Главный принцип:</strong> Лишь бы не во вред. Будьте бережны к себе.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/user_settings.json" class="btn btn-primary" download>Скачать user_settings.json</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
 <footer id="footer" class="parallax-section">
   <div class="container">
     <div class="row">
       <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
         <h4>Экосистема квантового смысла</h4>
-        <p>Шесть операционных систем для диалога. «Лишь бы не во вред».</p>
+        <p>Первый антропоморфный интеллектуальный интерфейс для LLM. Шесть операционных систем для диалога. «Лишь бы не во вред».</p>
       </div>
       <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
-        <div class="support-cus"><h4>Автор</h4><p>Гаррик</p></div>
+        <div class="support-cus"><h4>Автор</h4><p>Гаррик — архитектор диалоговых интерфейсов</p></div>
         <div class="support-cus"><h4>Контакты</h4><p><a href="mailto:g4dina77@yandex.ru">g4dina77@yandex.ru</a></p><p>GitHub: <a href="https://github.com/Garrik77/quantum-sense" target="_blank">Garrik77/quantum-sense</a></p></div>
       </div>
       <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
         <h4>Следить за новостями</h4>
-        <form class="newsletter" action="#" method="get"><input name="email" type="email" class="form-control" placeholder="Ваш Email"><button name="submit" value="sign-up" class='form-control'>Подписаться</button></form>
+        <form class="newsletter" action="#" method="get">
+          <input name="email" type="email" class="form-control" placeholder="Ваш Email">
+          <button name="submit" value="sign-up" class='form-control'>Подписаться</button>
+        </form>
       </div>
       <div class="col-md-12 col-sm-12 clearfix"><div class="dash-line"></div></div>
       <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.8s"><p class="copyright-text">© 2026 Экосистема квантового смысла | Дизайн: <a rel="nofollow" href="https://www.tooplate.com">Tooplate</a></p></div>

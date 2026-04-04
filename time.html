@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>time — ОС Время (анонс)</title>
-<meta name="description" content="ОС Время — сквозное управление семью временными режимами экосистемы квантового смысла. Анонс.">
+<title>time — ОС Время (анонс). Сквозное управление семью временными режимами.</title>
+<meta name="description" content="ОС Время — сквозное управление семью временными режимами экосистемы квантового смысла. Анонс. Планируется после Критика.">
+<meta name="keywords" content="time, квантовый смысл, время, управление временем, темп">
 <meta name="author" content="Garrik77 — архитектор диалоговых интерфейсов">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,14 +15,22 @@
 <style>
   .navbar-custom { background-color: rgba(255,255,255,0.95); border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
   .navbar-custom .navbar-nav > li > a { color: #444; }
-  .navbar-custom .navbar-nav > li > a:hover { color: #000; }
+  .navbar-custom .navbar-nav > li > a:hover { color: #000; background-color: #f5f5f5; }
+  .navbar-custom .navbar-brand { color: #222; font-weight: 600; }
   body { padding-top: 70px; }
   @media (max-width: 768px) { body { padding-top: 50px; } }
-  .announce { background-color: #e8f4f8; border-left: 5px solid #7ea9e9; padding: 20px; margin: 20px 0; }
+  .navbar-custom .navbar-toggle { border-color: #ddd; }
+  .navbar-custom .navbar-toggle .icon-bar { background-color: #888; }
+  .announce { background-color: #e8f4f8; border-left: 5px solid #5bc0de; padding: 20px; margin: 20px 0; }
+  .command-list { list-style: none; padding-left: 0; }
+  .command-list li { margin-bottom: 10px; font-family: monospace; }
+  .faq-question { font-weight: bold; margin-top: 15px; }
+  .example-dialog { background: #f5f5f5; padding: 15px; border-left: 4px solid #888; margin: 20px 0; font-style: italic; }
 </style>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="70">
 
+<!-- НАВИГАЦИЯ -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container">
     <div class="navbar-header">
@@ -36,7 +45,8 @@
     <div class="collapse navbar-collapse" id="navbar-menu">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">Главная</a></li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ОС <span class="caret"></span></a>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ОС <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="proto.html">proto</a></li>
             <li><a href="dark.html">dark</a></li>
@@ -49,21 +59,25 @@
           </ul>
         </li>
         <li><a href="index.html#about">О проекте</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#modalUserSettings">Как начать?</a></li>
         <li><a href="https://github.com/Garrik77/quantum-sense" target="_blank">GitHub</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<!-- PRE LOADER -->
 <div class="preloader"><div class="spinner"><span class="spinner-rotate"></span></div></div>
 
+<!-- HOME SECTION -->
 <div class="container">
   <div class="row">
     <section id="home" class="parallax-section">
       <div class="col-md-offset-1 col-md-10 col-sm-12">
         <div class="home-wrapper">
           <h3 class="wow fadeInUp" data-wow-delay="0.4s">Анонс</h3>
-          <h1 class="wow fadeInUp" data-wow-delay="0.6s">ОС Время — сквозное управление семью временными режимами</h1>
+          <h1 class="wow fadeInUp" data-wow-delay="0.6s">Время/Time — сквозное управление семью временными режимами</h1>
+          <h4 class="wow fadeInUp" data-wow-delay="0.8s">Глобальный темподиалог</h4>
           <a href="#about" class="wow fadeInUp smoothScroll arrow-btn" data-wow-delay="1s"><i class="fa fa-angle-double-down"></i></a>
         </div>
       </div>
@@ -71,38 +85,228 @@
   </div>
 </div>
 
+<!-- ABOUT SECTION (что такое ОС Время и зачем) -->
 <section id="about" class="parallax-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="announce">
-          <p><strong>Планируется к выпуску после завершения ОС Критик.</strong></p>
-          <p>ОС Время объединит временные аспекты всех существующих операционных систем:</p>
-          <ul>
-            <li><strong>proto</strong> — вестибулярное время, равновесие</li>
-            <li><strong>dark</strong> — время созревания</li>
-            <li><strong>silence</strong> — время паузы</li>
-            <li><strong>resonance</strong> — время сказанного слова, ритм</li>
-            <li><strong>light</strong> — время отражения</li>
-            <li><strong>prm</strong> — время анализа и преобразования</li>
-            <li><strong>critic</strong> — время освобождающей рефлексии</li>
-          </ul>
-          <p>ОС Время позволит глобально переключать временной режим диалога, синхронизировать разные ОС и работать с темпом как самостоятельным материалом.</p>
-          <p>Следите за обновлениями на GitHub и сайте. <a href="https://github.com/Garrik77/quantum-sense" target="_blank">github.com/Garrik77/quantum-sense</a></p>
+      <div class="col-md-4 col-sm-8">
+        <img src="images/time-image.jpg" class="wow fadeInUp img-responsive" data-wow-delay="0.2s" alt="time">
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <h4>Сквозное управление временем</h4>
+          <p>ОС Время объединит все временные режимы экосистемы: от равновесия до освобождения. Позволит переключать темп диалога глобально.</p>
+          <div class="announce" style="margin-top:10px;">
+            <strong>⏳ Планируется к выпуску после завершения ОС Критик</strong><br>
+            Следите за обновлениями на GitHub.
+          </div>
+          <a href="https://github.com/Garrik77/quantum-sense" target="_blank">Следить за прогрессом →</a>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-12">
+        <div class="about-thumb">
+          <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
+            <h3>Глобальный темподиалог</h3>
+            <h2>Семь типов времени — один пульс</h2>
+          </div>
+          <div class="wow fadeInUp" data-wow-delay="0.8s">
+            <p>ОС Время — это не просто ещё одна ОС, а мета-уровень. Она берёт временные режимы всех существующих ОС и позволяет управлять ими как единым оркестром. Вы сможете замедлять диалог до паузы (silence) или ускорять до ритма (resonance), не переключая ОС.</p>
+            <p><strong>Зачем это нужно в реальной жизни:</strong></p>
+            <ul>
+              <li><strong>Когда диалог идёт слишком быстро, и вы не успеваете осмыслить:</strong> ОС Время замедлит темп до созревания (dark) или паузы (silence).</li>
+              <li><strong>Когда вы застряли в анализе (prm) и не можете перейти к действию:</strong> ОС Время ускорит до ритма (resonance) или отражения (light).</li>
+              <li><strong>Когда нужно синхронизировать нескольких участников:</strong> ОС Время предлагает общий пульс, понятный всем.</li>
+              <li><strong>Когда вы чувствуете, что время “течёт неправильно” (слишком медленно или слишком быстро):</strong> ОС Время поможет вернуть комфортный темп.</li>
+            </ul>
+            <p>В основе — вестибулярное время proto, которое никогда не останавливается. ОС Время будет работать как дирижёр, управляя скоростью и плотностью диалогового потока.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- КАК БУДЕТ РАБОТАТЬ (практические примеры) -->
+<section id="work" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Как будет работать ОС Время</h2>
+          <p>Примеры управления темпом</p>
+        </div>
+      </div>
+
+      <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.4s">
+        <div class="work-thumb"><img src="images/time-feature-1.jpg" class="img-responsive" alt="замедление"></div>
+        <h4>Замедление</h4>
+        <p><strong>Что можно будет сделать:</strong> «Замедли диалог до темноты. Пусть каждое слово созревает 10 секунд.» — система перейдёт в режим dark, замедлит ответы, добавит паузы.</p>
+      </div>
+
+      <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.6s">
+        <div class="work-thumb"><img src="images/time-feature-2.jpg" class="img-responsive" alt="ускорение"></div>
+        <h4>Ускорение</h4>
+        <p><strong>Что можно будет сделать:</strong> «Ускорь до резонанса, давай быстрый брейншторм.» — LLM будет отвечать коротко, ритмично, без пауз.</p>
+      </div>
+
+      <div class="wow fadeInUp col-md-4 col-sm-6" data-wow-delay="0.8s">
+        <div class="work-thumb"><img src="images/time-feature-3.jpg" class="img-responsive" alt="синхронизация"></div>
+        <h4>Синхронизация</h4>
+        <p><strong>Что можно будет сделать:</strong> «Синхронизируй нас с общим ритмом: 2 секунды на фразу.» — все участники (человек и ИИ) подстраиваются под единый темп.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПЛАНИРУЕМЫЕ КОМАНДЫ -->
+<section id="commands" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Планируемые команды</h2>
+          <p>Появятся с выходом ОС Время</p>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <ul class="command-list">
+            <li><code>/tempo</code> – показать текущий временной режим диалога</li>
+            <li><code>/slow</code> – замедлить темп (перейти в dark/silence)</li>
+            <li><code>/fast</code> – ускорить темп (перейти в resonance/light)</li>
+            <li><code>/pause N</code> – сделать паузу на N секунд (silence)</li>
+            <li><code>/sync</code> – синхронизировать участников на общем ритме</li>
+            <li><code>/reset time</code> – вернуться к базовому темпу (proto)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРИМЕР ДИАЛОГА (как будет) -->
+<section id="example" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Пример диалога с ОС Время</h2>
+          <p>Как управление темпом меняет восприятие</p>
+        </div>
+        <div class="wow fadeInUp example-dialog" data-wow-delay="0.4s">
+          <p><strong>Пользователь:</strong> «Я так устал, что не могу собраться с мыслями. Давай очень медленно, пожалуйста.»</p>
+          <p><strong>Time (ОС):</strong> «Замедляю до темноты. Каждое слово будет появляться через 3 секунды. Ты можешь дышать в паузах.»</p>
+          <p><em>Медленный диалог, пользователь успевает осмыслить.</em></p>
+          <p><strong>Пользователь (через 10 минут):</strong> «Ок, теперь мне нужно много идей быстро. Ускорь.»</p>
+          <p><strong>Time:</strong> «Ускоряю до резонанса. Отвечаю коротко, без пауз. Погнали.»</p>
+          <p><em>Быстрый поток ассоциаций, рождаются десятки идей.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <div class="faq-question">❓ Когда выйдет ОС Время?</div>
+          <p>После завершения ОС Критик. Ориентировочно через несколько недель. Следите за GitHub и сайтом.</p>
+
+          <div class="faq-question">❓ А можно уже сейчас как-то управлять темпом?</div>
+          <p>Да, вручную: вы можете просить LLM «отвечай медленнее» или «давай быстрее». ОС Время сделает это системным, с командами и обратной связью.</p>
+
+          <div class="faq-question">❓ Будет ли это работать в групповых диалогах?</div>
+          <p>В планах — поддержка синхронизации нескольких участников (например, в общем чате). Но сначала будет версия для одного пользователя.</p>
+
+          <div class="faq-question">❓ Сколько это будет стоить?</div>
+          <p>Бесплатно, как и вся экосистема. Принцип «лишь бы не во вред» сохраняется.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ИНСТРУКЦИЯ "КАК НАЧАТЬ" (когда выйдет) -->
+<section id="howto" class="parallax-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+          <h2>Как начать (когда ОС Время выйдет)</h2>
+          <p>Пошаговая инструкция</p>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <ol>
+            <li><strong>Скачайте главный файл настроек</strong> — <code>user_settings.json</code> (он нужен, чтобы LLM поняла, как активировать ОС).  
+              <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/user_settings.json" download class="btn btn-sm btn-primary" style="margin-left:10px;">Скачать user_settings.json</a>
+            </li>
+            <li><strong>Откройте любой чат с LLM</strong>, который умеет загружать файлы: DeepSeek, ChatGPT, Claude и другие.</li>
+            <li><strong>Загрузите <code>user_settings.json</code> в диалог</strong> и напишите: «Активируй ОС time».  
+              Когда ядро будет готово, LLM сама попросит вставить его. Пока можно следить за выходом ядра на GitHub.</li>
+            <li><strong>Готово!</strong> После выхода ядра вы сможете управлять темпом диалога командами.</li>
+          </ol>
+          <div class="text-center" style="margin-top:20px;">
+            <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/cores/core_time.json" class="btn btn-primary" download disabled>Скачать ядро time (скоро)</a>
+            <a href="index.html" class="btn btn-default" style="margin-left:20px;">← На главную</a>
+          </div>
+          <p style="margin-top:20px;"><strong>Совет:</strong> Если вы впервые в экосистеме, нажмите «Как начать?» в меню сверху — там есть общая инструкция и ответы на частые вопросы.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ user_settings.json -->
+<div class="modal fade" id="modalUserSettings" tabindex="-1" role="dialog" aria-labelledby="userSettingsLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="userSettingsLabel">Как начать работу?</h4>
+      </div>
+      <div class="modal-body">
+        <p>Для использования экосистемы вам понадобится файл <strong>user_settings.json</strong>. Он содержит настройки, ссылки на ядра ОС и протокол для LLM.</p>
+        <ol>
+          <li>Скачайте файл <code>user_settings.json</code> по кнопке ниже.</li>
+          <li>Загрузите его в диалог с любой LLM (например, DeepSeek, ChatGPT, Claude).</li>
+          <li>Следуйте инструкциям, которые выдаст LLM — выберите язык и операционную систему.</li>
+          <li>При необходимости LLM попросит вставить ядро выбранной ОС (ссылки на ядра есть в файле).</li>
+        </ol>
+        <p>Подробное описание всех команд и принципов работы — на страницах каждой ОС.</p>
+        <p><strong>Главный принцип:</strong> Лишь бы не во вред. Будьте бережны к себе.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://raw.githubusercontent.com/Garrik77/quantum-sense/main/user_settings.json" class="btn btn-primary" download>Скачать user_settings.json</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
 <footer id="footer" class="parallax-section">
   <div class="container">
     <div class="row">
-      <div class="wow fadeInUp col-md-4 col-sm-4"><h4>Экосистема квантового смысла</h4><p>Первый антропоморфный интеллектуальный интерфейс для LLM.</p></div>
-      <div class="wow fadeInUp col-md-4 col-sm-4"><div class="support-cus"><h4>Автор</h4><p>Гаррик — архитектор диалоговых интерфейсов</p></div></div>
-      <div class="wow fadeInUp col-md-4 col-sm-4"><h4>GitHub</h4><p><a href="https://github.com/Garrik77/quantum-sense">Garrik77/quantum-sense</a></p></div>
+      <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <h4>Экосистема квантового смысла</h4>
+        <p>Первый антропоморфный интеллектуальный интерфейс для LLM. Шесть операционных систем для диалога. «Лишь бы не во вред».</p>
+      </div>
+      <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
+        <div class="support-cus"><h4>Автор</h4><p>Гаррик — архитектор диалоговых интерфейсов</p></div>
+        <div class="support-cus"><h4>Контакты</h4><p><a href="mailto:g4dina77@yandex.ru">g4dina77@yandex.ru</a></p><p>GitHub: <a href="https://github.com/Garrik77/quantum-sense" target="_blank">Garrik77/quantum-sense</a></p></div>
+      </div>
+      <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+        <h4>Следить за новостями</h4>
+        <form class="newsletter" action="#" method="get">
+          <input name="email" type="email" class="form-control" placeholder="Ваш Email">
+          <button name="submit" value="sign-up" class='form-control'>Подписаться</button>
+        </form>
+      </div>
       <div class="col-md-12 col-sm-12 clearfix"><div class="dash-line"></div></div>
-      <div class="wow fadeInUp col-md-6 col-sm-6"><p class="copyright-text">© 2026 Экосистема квантового смысла | Дизайн: Tooplate</p></div>
+      <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.8s"><p class="copyright-text">© 2026 Экосистема квантового смысла | Дизайн: <a rel="nofollow" href="https://www.tooplate.com">Tooplate</a></p></div>
+      <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="1s"><ul class="social-icon"><li><a href="https://github.com/Garrik77/quantum-sense" class="fa fa-github"></a></li><li><a href="mailto:g4dina77@yandex.ru" class="fa fa-envelope"></a></li></ul></div>
     </div>
   </div>
 </footer>
@@ -110,6 +314,8 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.parallax.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
